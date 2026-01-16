@@ -328,7 +328,11 @@ button:hover {
   width: 300px;
   margin-left: auto;
  position: relative;
- top: -170px;
+ top: -200px;
+}
+.f{
+  display: flex;
+  flex-direction: row;
 }
 .f1{
   display: flex;
