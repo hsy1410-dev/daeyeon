@@ -86,7 +86,7 @@ background-color: #4078ff;
 .cardContainer {
   max-width: 1200px;
   margin: 40px auto 0;
-  margin-bottom: -80px;
+  margin-bottom: -100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
