@@ -328,7 +328,7 @@ button:hover {
   width: 300px;
   margin-left: auto;
  position: relative;
- top: -100px;
+ top: -150px;
 }
 .f{
   display: flex;
@@ -704,4 +704,7 @@ button:hover {
 }
 .circle img {
   transform: translateY(1px);
+}
+.f{
+  margin-bottom: -50px;
 }
