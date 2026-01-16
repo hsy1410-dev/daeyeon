@@ -429,28 +429,35 @@ useEffect(() => {
         <p>광고 집행부터 전환 이후의 데이터까지 분석해</p>
         <p>성과 지표를 기준으로 캠페인을 운영합니다.</p>
 <div className="cardWrap">
+<div className="cardWrap">
   <div className="card">
-    
+    <div className="cardText">
+      <h2>전환 및 성과 분석</h2>
+      <p>클릭 이후 어떤 행동이 일어나는지 전환 데이터로 명확히 분석합니다.</p>
+      <p>문의, 신청, 구매 등 비즈니스에 실제로 의미 있는 지표만을</p>
+      <p>기준으로 광고 성과를 판단합니다.</p>
+    </div>
     <img src={back1} className="cardImg" />
-    <h2>전환 및 성과 분석</h2>
-    <p>클릭 이후 어떤 행동이 일어나는지 전환 데이터로 명확히 분석합니다.</p>
-<p>문의, 신청, 구매 등 비즈니스에 실제로 의미 있는 지표만을</p> 
-<p>기준으로 광고 성과를 판단합니다.</p>
   </div>
 
   <div className="card">
+    <div className="cardText">
+      <h2>모든 결과는 수치로 확인 가능합니다.</h2>
+      <p>광고는 감각이 아니라</p>
+      <p>데이터와 지표로 관리되어야 합니다.</p>
+    </div>
     <img src={back2} className="cardImg" />
-    <h2>모든 결과는 수치로 확인 가능합니다.</h2>
-    <p>광고는 감각이 아니라</p>
-    <p>데이터와 지표로 관리되어야 합니다.</p>
   </div>
 
   <div className="card">
+    <div className="cardText">
+      <h2>변동성은 관리되고, 성과는 안정됩니다.</h2>
+      <p>비효율 구간을 빠르게 감지해 손실을 줄여</p>
+      <p>광고비 대비 성과가 유지되는 구조를 만듭니다.</p>
+    </div>
     <img src={back3} className="cardImg" />
-    <h2>변동성은 관리되고, 성과는 안정됩니다.</h2>
-    <p>비효율 구간을 빠르게 감지해 손실을 줄여</p>
-<p>광고비 대비 성과가 유지되는 구조를 만듭니다.</p>
   </div>
+</div>
 </div>
 
       </div>
