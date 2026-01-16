@@ -361,6 +361,9 @@ button:hover {
   margin-left: auto;
   width: 100%;
   max-width: 900px;
+  position: relative;
+  right: -40px;
+  
 }
 .sec5 h5{
   margin-top: 200px;
