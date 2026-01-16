@@ -828,3 +828,119 @@ button:hover {
     height: 64px;
   }
 }
+/* =========================
+   1) 상단 3개 카드(.cardContainer) 전용
+   기존 .card 전역 스타일 충돌 방지
+========================= */
+.cardContainer .card {
+  text-align: center;
+  background: #f4f7fb;
+  padding: 8px 12px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* 상단 카드 hover만 적용 */
+.cardContainer .card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 상단 카드 글씨 */
+.cardContainer .card h2 {
+  font-size: 40px;
+  color: #4078ff;
+  margin-bottom: 12px;
+}
+.cardContainer .card p {
+  font-weight: 600;
+  margin: 2px 0;
+}
+
+/* 상단 카드 띄우기(데스크톱만) */
+@media (min-width: 769px) {
+  .cardContainer .card {
+    margin-top: -200px;
+  }
+}
+
+/* 🔥 전역으로 들어가 있던 card transform 제거 */
+.card {
+  transform: none !important;
+}
+
+
+/* =========================
+   2) 아래 '데이터와 성과 지표' 카드 전용
+   (텍스트 + 오른쪽 이미지)
+========================= */
+.metricWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.metricCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 22px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.metricText {
+  flex: 1;
+  min-width: 0;              /* 긴 문장 줄바꿈 안정 */
+}
+
+.metricText h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.metricText p {
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 3px 0;
+}
+
+.metricImg {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-left: 14px;
+  display: block;
+}
+
+
+/* ✅ 모바일: 카드 내부 세로 전환 + 이미지는 오른쪽 아래 */
+@media (max-width: 768px) {
+  .metricCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .metricImg {
+    width: 72px;
+    height: 72px;
+    margin-left: 0;
+    align-self: flex-end;
+  }
+
+  .metricText h2 {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .metricText p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
