@@ -181,9 +181,10 @@ button:hover {
 }
 .paper p{
   font-size:17px;
+
 }
-.sec3 {
-      margin-bottom: 60px;
+.sec3 p {
+  margin-bottom: 48px;  /* 🔥 원하는 만큼 조절 */
 }
 .sec3 h1{
   color:#2a63e7;
