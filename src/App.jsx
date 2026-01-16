@@ -148,12 +148,13 @@ useEffect(() => {
       
       <div className="head hidden">
         <img src={logo} className="logo"/>
+        <div className="h">
         <h1 className="firsth1">데이터로 판단하고,</h1>
         <h1>성과로 증명합니다</h1>
         <p>데이터로 증명하는 퍼포먼스</p>
         <p>구글 광고의 최적의 해답을 설계합니다.</p>
         <button onClick={()=>scrollToSection("신청고고")}>광고문의 바로가기</button>
-      </div>
+      </div></div>
     </header>
     <section className="sec1">
       <div className="div1">

@@ -27,10 +27,12 @@ section, header, footer {
   display: flex;
   align-items: center;     /* 세로 가운데 */
   margin-bottom: 50px;
+
+}
+.h{
   position: relative;
   top: -100px;
 }
-
 .head {
   max-width: 1200px;
   margin: 0 auto;
