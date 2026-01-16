@@ -1162,8 +1162,7 @@ button:hover {
 .h{
   margin-bottom: -200px;;
 }.m11{
-  scale:calc(0.6);
-  position: relative;
-  right: -2px;
+  transform: scale(0.6);
+  transform-origin: right top; /* ✅ 가로 기준: 오른쪽 */
 }
 }
