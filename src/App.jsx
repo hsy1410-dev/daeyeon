@@ -430,7 +430,7 @@ useEffect(() => {
         <p>성과 지표를 기준으로 캠페인을 운영합니다.</p>
 <div className="cardWrap">
 <div className="cardWrap">
-  <div className="card">
+  <div className="card11">
     <div className="cardText">
       <h2>전환 및 성과 분석</h2>
       <p>클릭 이후 어떤 행동이 일어나는지 전환 데이터로 명확히 분석합니다.</p>
@@ -440,7 +440,7 @@ useEffect(() => {
     <img src={back1} className="cardImg" />
   </div>
 
-  <div className="card">
+  <div className="card11">
     <div className="cardText">
       <h2>모든 결과는 수치로 확인 가능합니다.</h2>
       <p>광고는 감각이 아니라</p>
@@ -449,7 +449,7 @@ useEffect(() => {
     <img src={back2} className="cardImg" />
   </div>
 
-  <div className="card">
+  <div className="card11">
     <div className="cardText">
       <h2>변동성은 관리되고, 성과는 안정됩니다.</h2>
       <p>비효율 구간을 빠르게 감지해 손실을 줄여</p>

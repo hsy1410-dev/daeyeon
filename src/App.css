@@ -755,7 +755,7 @@ button:hover {
   flex-wrap: wrap;              /* 줄바꿈 허용 */
 }
 
-.card {
+.card11 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -774,8 +774,8 @@ button:hover {
 }
 
 .cardImg {
-  width: 90px;
-  height: 90px;
+  width: 800px;
+  height: auto;
   object-fit: contain;
 
   margin-left: 16px;
