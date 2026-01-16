@@ -1143,4 +1143,7 @@ button:hover {
     position: relative;
     top: -200px;
   }
+  .rolling-section{
+    margin-top: -200px;;
+  }
 }
