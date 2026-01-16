@@ -191,9 +191,7 @@ button:hover {
 .sec3 h2{
   color:#4078ff;
 }
-.box-container {
-  margin-top: 120px;
-}
+
 .circle {
   position: absolute;
   top: -56px;             /* 🔥 박스 밖으로 살짝 */
