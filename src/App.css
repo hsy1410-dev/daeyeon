@@ -1162,6 +1162,8 @@ button:hover {
 .h{
   margin-bottom: -200px;;
 }.m11{
-  scale:calc(0.8);
+  scale:calc(0.6);
+  position: relative;
+  right: -2px;
 }
 }
