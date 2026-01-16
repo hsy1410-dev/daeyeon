@@ -1,0 +1,693 @@
+*{
+    font-family: "pretendard";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color:#f5f5f5;
+}
+h1, h2, p {
+  word-break: keep-all;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+section, header, footer {
+    width: 100%;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;        /* 🔥 화면 꽉 채우기 */
+ background-color: #f5f5f5;
+  display: flex;
+  align-items: center;     /* 세로 가운데 */
+}
+
+.head {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.head h1 {
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 800;
+  line-height: 1.6;
+}
+.firsth1{
+    color: #4078ff;
+
+}
+
+.head p {
+  font-size: clamp(14px, 2.5vw, 18px);
+  opacity: 0.9;
+}
+.head button {
+  margin-top: 24px;
+  width: fit-content;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color:#495EE5;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.head button:hover {
+  background: #eaf2ff;
+}
+section {
+  padding: 80px 16px;
+}
+.sec1{
+    text-align: center;
+background-color: #4078ff;
+
+}
+.div1{
+    color: #fff;
+    padding: 60px;
+}
+
+.cardContainer {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  background-color: #f5f5f5;
+}
+.card {
+  text-align: center;
+  background: #f4f7fb;
+  padding: 8px 12px;
+  border-radius: 16px;
+  margin-top: -200px;
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+}
+.card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+.card h2 {
+  font-size: 40px;
+  color: #4078ff;
+  margin-bottom: 12px;
+  
+}
+.card p{
+  font-weight: 600;
+   margin: 2px 0;
+}
+@media (max-width: 768px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .head {
+    padding: 80px 16px;
+  }
+  .paperContainer{
+    grid-template-columns: 1fr;
+  }
+}
+button {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+.sec2 h1{
+  color:#f5f5f5;
+}
+.sec2 h2{
+  font-size: 35px;
+  color:#f5f5f5;
+}
+.sec2{
+  background-image:url(./img/back0.png);
+  background-size: cover;
+  padding: 40px;
+}
+.icon1{
+  width: 200px;
+ margin: 0 auto;
+ 
+}
+.paperContainer{
+  display:grid; 
+  grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+}
+.paper {
+  color: #f5f5f5;
+  border: 2px solid #f5f5f5f5;
+  border-radius: 12px;
+  margin: 10px;
+  text-align: center;
+   
+}
+.paper h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.paper p{
+  font-size:17px;
+}
+.sec3 h1{
+  color:#2a63e7;
+  font-weight: 900;
+}
+.sec3 h2{
+  color:#4078ff;
+}
+.circle {
+  position: absolute;
+  top: -56px;             /* 🔥 박스 밖으로 살짝 */
+  left: 5%;
+  transform: translateX(-50%);
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ffffff;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon5{
+  width: 80px;
+
+}
+
+.box{
+  background-color: #eaeaea;
+  margin-top: 60px;
+  margin:60px 30px;
+   position: relative; 
+     padding: 50px 50px; 
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+.box h4 {
+  font-size: 25px;
+}
+.sect4{
+  background-color: #363636;
+}
+.sec4 h2{
+  font-size: 50px;
+}
+.sec4 span{
+    font-weight: 800;
+   background: linear-gradient(90deg, #fff, #8fcbfc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.sec4 h4{
+  color:#f5f5f5;
+  font-size: 30px;
+}
+.sec5 button{
+  background-color: #4078ff;
+  color:#f5f5f5;
+  padding: 20px 40px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+/* =========================
+   ✅ ROLLING (JS requestAnimationFrame 버전)
+   이미지 130px 기준
+========================= */
+
+.rolling-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 6px 0;        /* ✅ 섹션 위아래 여백 최소 */
+  display: flex;
+  flex-direction: column;
+  gap: 0px;              /* ✅ 위/아래 줄 간격 최소 */
+}
+
+.rolling-row {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ✅ 한 줄(부모) 높이 = 이미지보다 살짝 크게 */
+.rolling-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 150px;         /* ✅ 130 + 여유(안 잘리게) */
+}
+
+/* ✅ JS가 움직이는 트랙 2개 */
+.rolling-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;             /* ✅ 이미지 좌우 간격 */
+  width: max-content;
+
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+/* ✅ 이미지 (카드 느낌 X) */
+.rolling-track img {
+  height: 200px;         /* ✅ 이미지 크기 */
+  width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+
+  border-radius: 18px;   /* ✅ 둥글게 (원하면 0도 가능) */
+  display: block;
+  vertical-align: middle;
+
+  user-select: none;
+  pointer-events: none;
+
+  background: transparent;
+  box-shadow: none;
+}
+
+/* ✅ 모바일 */
+@media (max-width: 768px) {
+  .rolling-section {
+    padding: 4px 0;
+    gap: 2px;
+  }
+
+  .rolling-wrap {
+    height: 108px;       /* 100 + 여유 */
+  }
+
+  .rolling-track {
+    gap: 8px;
+  }
+
+  .rolling-track img {
+    height: 100px;
+    border-radius: 14px;
+  }
+}
+.logo{
+  width: 300px;
+  position: relative;
+  top: -100px;
+}
+.logo2{
+  width: 300px;
+  margin-left: auto;
+ position: relative;
+ top: -100px;
+}
+.f{
+  display: flex;
+  flex-direction: row;
+}
+.sect5{
+  background: linear-gradient(
+  90deg,
+  #2B2A51 0%,
+  #5A6084 50%,
+  #7F859B 100%
+);
+
+}
+.sec5 h4{
+  color:#f5f5f5;
+  font-size:30px;
+}
+.sec5 h2{
+  color:#8fadf7;
+  font-size: 50px;
+}
+.ii{
+  margin-left: auto;
+  width: 100%;
+  max-width: 800px;
+}
+.sec5 h5{
+  margin-top: 200px;
+  color:#f5f5f5;
+  font-size: 25px;
+}
+.sec6 h1{
+  font-size: 60px;
+}
+.sec6 p{
+  font-size: 21px;
+}
+.sec6 h5{
+  font-size:30px;
+}
+.sec7{
+  border: 5px solid blue;
+  padding: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sec7 button{
+  background-color:#2a63e7;
+  color: #f5f5f5;
+  margin-top: 50px;
+  padding: 20px 60px;
+  border-radius: 16px;
+  font-size: 20px;
+}
+.foot p{
+  margin-bottom: 20px;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+/* 등장할 때 활성화 */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* 순차 딜레이 */
+ .paper:nth-child(1) { transition-delay: 0.0s; }
+ .paper:nth-child(2) { transition-delay: 0.3s; }
+.paper:nth-child(3) { transition-delay: 0.6s; }
+ .paper:nth-child(4) { transition-delay: 0.9s; }
+
+.cardWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* ✅ 카드 사이 간격 (원하는 만큼 조절) */
+}
+
+.card {
+  margin: 0;
+  padding: 0;
+}
+
+.cardImg {
+  display: block; /* ✅ 이미지 밑 여백 제거 핵심 */
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+/* =========================
+   ✅ MOBILE RESPONSIVE (추가)
+========================= */
+@media (max-width: 768px) {
+
+  /* ✅ 전체 기본 패딩 줄이기 */
+  section {
+    padding: 60px 14px;
+  }
+
+  /* ✅ HERO */
+  .hero {
+    min-height: 92vh;
+    padding: 40px 0;
+  }
+
+  .logo {
+    width: 190px;
+    top: -40px;
+  }
+
+  .head h1 {
+    font-size: clamp(26px, 7vw, 42px);
+    line-height: 1.25;
+  }
+
+  .head p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .head button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  /* ✅ sec1 */
+  .div1 {
+    padding: 40px 10px;
+  }
+
+  /* ✅ 상단 3개 카드 (중요) */
+  .cardContainer {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 0 10px;
+    margin-top: 22px;
+  }
+
+  .card {
+    margin-top: 0; /* ✅ -200px 제거 */
+    padding: 18px 12px;
+    border-radius: 14px;
+  }
+
+  .card h2 {
+    font-size: 28px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  /* ✅ sec2 배경 섹션 */
+  .sec2 {
+    padding: 36px 16px;
+    background-position: center;
+  }
+
+  .sec2 h1 {
+    font-size: 18px;
+  }
+
+  .sec2 h2 {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  /* ✅ paperContainer 1열 */
+  .paperContainer {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .paper {
+    padding: 18px 12px;
+    margin: 0;
+  }
+
+  .paper h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .paper p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .icon1 {
+    width: 120px;
+  }
+
+  /* ✅ sec3 */
+  .sec3 h1 {
+    font-size: 26px;
+  }
+
+  .sec3 h2 {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 26px;
+  }
+
+  .box {
+    margin: 0;
+    padding: 38px 18px 22px;
+    border-radius: 14px;
+  }
+
+  .circle {
+    width: 78px;
+    height: 78px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .icon5 {
+    width: 54px;
+  }
+
+  .box h4 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .box p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* ✅ sec4 */
+  .sec4 h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .sec4 h4 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .logo2 {
+    width: 170px;
+    top: 0px;
+  }
+
+  /* ✅ sec4 상단 f (텍스트+로고) */
+  .sec4 .f {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  /* ✅ rolling 이미지 높이 재조정 */
+  .rolling-wrap {
+    height: 110px;
+  }
+
+  .rolling-track img {
+    height: 100px;
+    border-radius: 14px;
+  }
+
+  /* ✅ sec5 */
+  .sec5 h4 {
+    font-size: 18px;
+  }
+
+  .sec5 h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-top: 6px;
+  }
+
+  .sec5 h5 {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
+  .sec5 button {
+    padding: 14px 22px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+  .sec1 h1{
+    font-size: 30px;
+  }
+
+  .sec5 .f {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .ii {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* ✅ sec6 */
+  .sec6 h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .sec6 p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* ✅ 카드 이미지 섹션(3장) */
+  .cardWrap {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  /* ✅ sec7 */
+  .sec7 {
+    padding: 22px 12px;
+    border-width: 3px;
+  }
+
+  .sec7 h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .sec7 button {
+    width: 100%;
+    padding: 16px 14px;
+    font-size: 16px;
+    border-radius: 14px;
+  }
+
+  /* ✅ footer */
+  footer {
+    padding: 40px 16px;
+  }
+
+  .foot p {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+}
+.card {
+  transform: translateY(-180px);
+}
+@media (max-width: 768px) {
+  .card {
+    transform: translateY(0px);
+  }
+}
