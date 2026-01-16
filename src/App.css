@@ -873,7 +873,7 @@ button:hover {
 .metricImg {
   position: absolute;
   top: -40px;
-  right: -40px;
+  right: -60px;
 
   width: 600px;
   height: 600px;
