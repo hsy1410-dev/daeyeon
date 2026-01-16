@@ -20,9 +20,9 @@ import icon6 from "./img/icon6.png";
 import icon7 from "./img/icon7.png";
 import logo2 from "./img/logo2.png";
 import ii from "./img/img1.png";
-import back3 from "./img/back3.png";
-import back1 from "./img/back1.png";
-import back2 from "./img/back2.png";
+import back3 from "./img/25.png";
+import back1 from "./img/23.png";
+import back2 from "./img/24.png";
 
 function scrollToSection(id) {
   const section = document.getElementById(id);
