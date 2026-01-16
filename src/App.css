@@ -328,11 +328,14 @@ button:hover {
   width: 300px;
   margin-left: auto;
  position: relative;
- top: -150px;
+ top: -200px;
 }
 .f{
   display: flex;
   flex-direction: row;
+}
+.f3{
+  margin-top: -100px;
 }
 .sect5{
   background: linear-gradient(

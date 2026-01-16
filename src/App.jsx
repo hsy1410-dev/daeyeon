@@ -415,7 +415,7 @@ useEffect(() => {
       <h4>성과로 이어질 때 까지</h4>
       <h2>관리합니다.</h2>
     <div className="f">  
-      <div>
+      <div className="f3">
       <h5>광고ㆍ제작 통합 전략 문의</h5>
       <button onClick={()=>scrollToSection("신청고고")}>알아보기</button>
       </div>
