@@ -1164,5 +1164,6 @@ button:hover {
 }.m11{
   transform: scale(0.75);
   transform-origin: right center; /* ✅ 가로 기준: 오른쪽 */
+  margin-right: 5px;
 }
 }
