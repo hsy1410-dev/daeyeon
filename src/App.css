@@ -853,60 +853,70 @@ button:hover {
 }
 
 
-/* =========================
 .metricWrap {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 /* 카드 */
 .metricCard {
   position: relative;
-  padding: 28px 24px 24px;
+  padding: 40px 40px 36px;
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  overflow: visible; /* 🔥 큰 이미지 허용 */
 }
 
-/* 🔥 이미지: 우측 상단 크게 */
+/* 🔥 이미지: 우측 상단, 매우 크게 */
 .metricImg {
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: -40px;
+  right: -40px;
 
-  width: 140px;          /* 크게 */
-  height: auto;
+  width: 600px;
+  height: 600px;
+
   object-fit: contain;
+  pointer-events: none;
 }
 
 /* 텍스트는 이미지 아래 + 왼쪽부터 */
 .metricText {
-  margin-top: 120px;     /* 이미지 아래로 밀기 */
+  margin-top: 420px;  /* 🔥 이미지 높이에 맞춰 충분히 내려줌 */
+  max-width: 720px;   /* 가독성용 (선택) */
 }
 
 .metricText h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  margin-bottom: 14px;
 }
 
 .metricText p {
-  font-size: 15px;
-  line-height: 1.55;
-  margin: 3px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 4px 0;
 }
 
-/* ✅ 모바일 반응형 */
+/* =========================
+   ✅ 모바일 대응 (필수)
+========================= */
 @media (max-width: 768px) {
+  .metricCard {
+    padding: 28px 20px 24px;
+  }
+
   .metricImg {
-    width: 100px;
-    top: 14px;
-    right: 14px;
+    width: 320px;
+    height: 320px;
+
+    top: -20px;
+    right: -20px;
   }
 
   .metricText {
-    margin-top: 92px;
+    margin-top: 240px;
   }
 
   .metricText h2 {
@@ -917,3 +927,16 @@ button:hover {
     font-size: 14px;
   }
 }
+
+/* 초소형 모바일 */
+@media (max-width: 420px) {
+  .metricImg {
+    width: 260px;
+    height: 260px;
+  }
+
+  .metricText {
+    margin-top: 200px;
+  }
+}
+
