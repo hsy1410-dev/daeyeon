@@ -1146,4 +1146,7 @@ button:hover {
   .rolling-section{
     margin-top: -200px;;
   }
+  .metricText{
+    z-index: 12;
+  }
 }
