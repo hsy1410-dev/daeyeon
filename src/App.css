@@ -854,30 +854,36 @@ button:hover {
 
 
 /* =========================
-   2) 아래 '데이터와 성과 지표' 카드 전용
-   (텍스트 + 오른쪽 이미지)
-========================= */
 .metricWrap {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  margin-top: 18px;
+  gap: 20px;
 }
 
+/* 카드 */
 .metricCard {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 22px;
-  border-radius: 16px;
+  position: relative;
+  padding: 28px 24px 24px;
   background: #fff;
+  border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
 }
 
+/* 🔥 이미지: 우측 상단 크게 */
+.metricImg {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  width: 140px;          /* 크게 */
+  height: auto;
+  object-fit: contain;
+}
+
+/* 텍스트는 이미지 아래 + 왼쪽부터 */
 .metricText {
-  flex: 1;
-  min-width: 0;              /* 긴 문장 줄바꿈 안정 */
+  margin-top: 120px;     /* 이미지 아래로 밀기 */
 }
 
 .metricText h2 {
@@ -891,39 +897,23 @@ button:hover {
   margin: 3px 0;
 }
 
-.metricImg {
-  width: 96px;
-  height: 96px;
-  object-fit: contain;
-  flex-shrink: 0;
-  margin-left: 14px;
-  display: block;
-}
-
-
-/* ✅ 모바일: 카드 내부 세로 전환 + 이미지는 오른쪽 아래 */
+/* ✅ 모바일 반응형 */
 @media (max-width: 768px) {
-  .metricCard {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 18px;
+  .metricImg {
+    width: 100px;
+    top: 14px;
+    right: 14px;
   }
 
-  .metricImg {
-    width: 72px;
-    height: 72px;
-    margin-left: 0;
-    align-self: flex-end;
+  .metricText {
+    margin-top: 92px;
   }
 
   .metricText h2 {
     font-size: 18px;
-    line-height: 1.25;
   }
 
   .metricText p {
     font-size: 14px;
-    line-height: 1.5;
   }
 }
