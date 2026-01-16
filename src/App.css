@@ -952,3 +952,71 @@ button:hover {
 .m3{
   background-color: #9fc3f2;
 }
+/* =========================
+   ✅ metric 섹션 모바일 반응형 (강화)
+   600px 이미지 버전 대응
+========================= */
+@media (max-width: 768px) {
+
+  /* 카드 간격/여백 */
+  .metricWrap {
+    gap: 18px;
+    margin-top: 10px;
+  }
+
+  .metricCard {
+    padding: 20px 16px 18px;
+    border-radius: 16px;
+    overflow: hidden; /* ✅ 모바일에서 튀어나오는 이미지 잘라서 가로스크롤 방지 */
+  }
+
+  /* ✅ 이미지: 화면에 맞춰 자동 축소 (최대 360) */
+  .metricImg {
+    top: -10px;
+    right: -10px;
+
+    width: min(86vw, 360px);
+    height: min(86vw, 360px);
+    object-fit: contain;
+  }
+
+  /* ✅ 텍스트: 이미지 크기에 맞춰 자동으로 아래로 */
+  .metricText {
+    margin-top: calc(min(86vw, 360px) * 0.72);
+    max-width: 100%;
+  }
+
+  .metricText h2 {
+    font-size: 20px;     /* 지금 40은 모바일에서 너무 큼 */
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+
+  .metricText p {
+    font-size: 14px;     /* 지금 25는 모바일에서 깨짐 */
+    line-height: 1.5;
+  }
+}
+
+/* ✅ 더 작은 폰 */
+@media (max-width: 420px) {
+  .metricImg {
+    width: min(92vw, 300px);
+    height: min(92vw, 300px);
+    top: -8px;
+    right: -8px;
+  }
+
+  .metricText {
+    margin-top: calc(min(92vw, 300px) * 0.72);
+  }
+
+  .metricText h2 {
+    font-size: 18px;
+  }
+  .f1{
+  
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+}
