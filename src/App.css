@@ -333,9 +333,7 @@ button:hover {
 .f{
   display: flex;
   flex-direction: row;
-}
-.f3{
-  margin-top: -200px;
+  margin-top: -100px;
 }
 .sect5{
   background: linear-gradient(
