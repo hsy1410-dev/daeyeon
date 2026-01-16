@@ -437,7 +437,7 @@ useEffect(() => {
       <p>문의, 신청, 구매 등 비즈니스에 실제로 의미 있는 지표만을</p>
       <p>기준으로 광고 성과를 판단합니다.</p>
     </div>
-    <img src={back1} className="metricImg" alt="" />
+    <img src={back1} className="metricImg m11" alt="" />
   </div>
 
   <div className="metricCard m2">
