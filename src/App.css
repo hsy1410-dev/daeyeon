@@ -889,12 +889,12 @@ button:hover {
 }
 
 .metricText h2 {
-  font-size: 26px;
+  font-size: 40px;
   margin-bottom: 14px;
 }
 
 .metricText p {
-  font-size: 16px;
+  font-size: 25px;
   line-height: 1.6;
   margin: 4px 0;
 }
