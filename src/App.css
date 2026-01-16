@@ -1146,7 +1146,18 @@ button:hover {
   .rolling-section{
     margin-top: -200px;;
   }
-  .metricText{
-    z-index: 12;
-  }
+.metricCard{
+  position: relative;  /* 기준 레이어 */
+}
+
+.metricImg{
+  position: absolute;
+  z-index: 1;          /* 뒤로 */
+}
+
+.metricText{
+  position: relative;  /* ✅ z-index 먹게 만들기 */
+  z-index: 10;         /* 앞으로 */
+}
+
 }
