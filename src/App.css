@@ -1114,7 +1114,7 @@ button:hover {
   }
 
   .f1 {
-    flex-direction: row;
+    flex-direction: column;
     gap: 18px;
     margin-top: 18px;
     margin-bottom: 0;
