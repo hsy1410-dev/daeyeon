@@ -23,7 +23,7 @@ section, header, footer {
 }
 .hero {
   width: 100%;
-  min-height: 100vh;        /* 🔥 화면 꽉 채우기 */
+  min-height: 50vh;        /* 🔥 화면 꽉 채우기 */
  background-color: #f5f5f5;
   display: flex;
   align-items: center;     /* 세로 가운데 */
