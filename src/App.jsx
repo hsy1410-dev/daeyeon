@@ -478,7 +478,7 @@ useEffect(() => {
     <footer>
       <div className="foot">
         <hr/>
-        <p>주식회사 대연아이앤씨</p>
+        <p>대연아이앤씨</p>
         <p>대표자: 허승우</p>
         <p>사업자등록번호:665-60-00626</p>
       </div>
